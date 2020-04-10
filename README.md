@@ -4,7 +4,17 @@
 These snippets allow creating a service bus namespace, write sample messages to it and read them
 
 # Prerequisites
-These snippets require a linux environment, python3, Azure Service Bus python SDK and Azure CLI installed. If you have those already installed, go to the next section. If now, execute the following snippet:
+These snippets require a linux environment, python3, Azure Service Bus python SDK and Azure CLI installed. If you have those already installed, go to the next section. 
+For installing the Azure az CLI, please refer to the [Azure Documentation](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+Additionally, you would need the to install additional packages with the following snippet:
+
+```
+
+
+```
+Once installed, perform account login using ```az login```
+
+If now, execute the following snippet:
 ```
 export SERVICEBUS_NAMESPACE="sergio-servicebus"
 export SERVICEBUS_KEY_NAME="RootManageSharedAccessKey"
@@ -58,11 +68,6 @@ Initialized connection to service bus service-bus-demo-sb-namespace on topic ser
   Recieved message: b'Msg 4 at 2020-04-10 15:59:48.648204'
 </pre>
 
-Additionally it can send sample messages to any service bus topic overriding default parameters
-<pre>
-<b>./1_service_bus_sender.sh -h  </b>
-Usage: cmd [-n service_bus_namespace_name] [-g resource_group] [-k key_value] [-t topic]
-</pre>
 Additionally it can receive messages to any service bus topic overriding default parameters
 <pre>
 <b>./2_service_bus_receiver.sh -h </b>
