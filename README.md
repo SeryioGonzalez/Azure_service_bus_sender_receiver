@@ -5,7 +5,7 @@ These snippets allow creating a service bus namespace, write sample messages to 
 
 # Prerequisites
 These snippets require a linux environment, python3, Azure Service Bus python SDK and Azure CLI installed. If you have those already installed, go to the next section. 
-For installing the Azure az CLI, please refer to the [Azure Documentation](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+For installing the Azure az CLI, please refer to the [Azure Documentation](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest). <br/>
 Additionally, you would need the to install additional packages with the following snippet:
 
 ```
