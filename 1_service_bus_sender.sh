@@ -2,7 +2,7 @@
 
 source config.sh
 
-while getopts "n:g:k:t:" opt; do
+while getopts "n:g:k:t:h" opt; do
   case ${opt} in
     n ) # process option n
         echo "EVENT HUB NAMESPACE IS $OPTARG"
@@ -20,8 +20,13 @@ while getopts "n:g:k:t:" opt; do
         echo "TOPIC IS $OPTARG"
         export service_bus_namespace_topic=$OPTARG
       ;;
+    h ) # process option h
+        echo "Usage: cmd [-n service_bus_namespace_name] [-g resource_group] [-k key_value] [-t topic]"
+        exit
+      ;;
     \? ) 
         echo "Usage: cmd [-n service_bus_namespace_name] [-g resource_group] [-k key_value] [-t topic]"
+        exit
       ;;
   esac
 done
