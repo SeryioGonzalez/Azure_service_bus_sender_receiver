@@ -16,7 +16,7 @@ pip3 install azure-servicebus
 Once installed, perform account login using ```az login```
 
 # Creating an Azure service bus (Optional)
-You can use the scripts provided for writing and reading from an existing service bus an topic, but the following script would create a test environment. You need to provide the subscription id as parameter and have executed previously az login to this very subscription.
+You can use the scripts provided for writing and reading from an existing service bus and topic, but the following script would create a test environment. You need to provide the subscription id as parameter and have executed previously ```az login``` to this very subscription.
 <pre>
 <b> ./0_create_service_bus.sh 11111111-2222-3333-4444-55555555555 </b>
 Subscription set to 11111111-2222-3333-4444-55555555555
