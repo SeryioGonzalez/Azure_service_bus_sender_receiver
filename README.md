@@ -9,18 +9,11 @@ For installing the Azure az CLI, please refer to the [Azure Documentation](https
 Additionally, you would need the to install additional packages with the following snippet:
 
 ```
-
-
+sudo apt-get update -y
+sudo apt-get install python3-pip -y
+pip3 install azure-servicebus
 ```
 Once installed, perform account login using ```az login```
-
-If now, execute the following snippet:
-```
-export SERVICEBUS_NAMESPACE="sergio-servicebus"
-export SERVICEBUS_KEY_NAME="RootManageSharedAccessKey"
-export SERVICEBUS_KEY_VALUE="dsdsdsdsdsdsdsdsdddsdZC59/wMfcYVTWM="
-export SERVICEBUS_TOPIC="device-messages"
-```
 
 # Creating an Azure service bus (Optional)
 You can use the scripts provided for writing and reading from an existing service bus an topic, but the following script would create a test environment. You need to provide the subscription id as parameter and have executed previously az login to this very subscription.
