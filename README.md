@@ -1,6 +1,6 @@
 # azure-service-bus-python
 
-In order to run it, configure environment values in the linux bash terminal, as an example:
+These snippets allow creating a service bus namespace, write sample messages to it and read them
 
 ```
 export SERVICEBUS_NAMESPACE="sergio-servicebus"
